@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Check</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto,
+          "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
+          "Segoe UI Emoji";
+      }
+    </style>
+  </head>
+  <body
+    class=" text-stone-800"
+  >
+    <!-- NAV -->
+    <header
+      class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/60 bg-white/70 border-b border-orange-100"
+    >
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <a href="#home" class="inline-flex items-center gap-2">
+            <span
+              class="inline-block h-8 w-8 rounded-2xl bg-gradient-to-tr from-orange-500 to-orange-300 shadow-sm"
+            ></span>
+            <span class="font-extrabold tracking-tight text-stone-900"
+              >Your Name</span
+            >
+          </a>
+          <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+            <a
+              class="hover:text-orange-600 transform transition duration-300 hover:-translate-y-1"
+              href="#about"
+              >About</a
+            >
+            <a
+              class="hover:text-orange-600 transform transition duration-300 hover:-translate-y-1"
+              href="#projects"
+              >Projects</a
+            >
+            <a
+              class="hover:text-orange-600 transform transition duration-300 hover:-translate-y-1"
+              href="#skills"
+              >Skills</a
+            >
+            <a
+              class="hover:text-orange-600 transform transition duration-300 hover:-translate-y-1"
+              href="#experience"
+              >Experience</a
+            >
+            <a
+              class="hover:text-orange-600 transform transition duration-300 hover:-translate-y-1"
+              href="#contact"
+              >Contact</a
+            >
+          </nav>
+          <button
+            id="menuBtn"
+            class="md:hidden inline-flex items-center rounded-xl border border-orange-200 bg-white px-3 py-2 text-sm font-medium shadow-sm transform transition duration-300 hover:-translate-y-1 hover:shadow-md"
+          >
+            Menu
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="md:hidden hidden border-t border-orange-100 bg-white/90"
+      >
+        <div class="mx-auto max-w-7xl px-4 py-3 grid grid-cols-1 justify-items-center gap-3 text-sm">
+          <a class="rounded-xl px-3 py-2 hover:bg-orange-50" href="#about"
+            >About</a
+          >
+          <a class="rounded-xl px-3 py-2 hover:bg-orange-50" href="#projects"
+            >Projects</a
+          >
+          <a class="rounded-xl px-3 py-2 hover:bg-orange-50" href="#skills"
+            >Skills</a
+          >
+          <a class="rounded-xl px-3 py-2 hover:bg-orange-50" href="#experience"
+            >Experience</a
+          >
+          <a class="rounded-xl px-3 py-2 hover:bg-orange-50" href="#contact"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="relative overflow-hidden">
+
+
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+        <div class="grid lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <div
+              class="inline-flex items-center gap-2 rounded-full border border-orange-200  px-3 py-1 text-xs font-medium shadow-sm"
+            >
+              <span class="h-2 w-2 rounded-full bg-orange-500"></span>
+              Available for work
+            </div>
+            <h1
+              class="mt-5 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-stone-900"
+            >
+              Building clean, fast web experiences
+            </h1>
+            <p class="mt-4 text-base sm:text-lg text-stone-600 max-w-xl">
+              I’m a front-end developer who crafts delightful interfaces with
+              modern tools. I care about performance, accessibility, and tiny
+              details.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-3">
+              <a
+                href="#projects"
+                class="inline-flex items-center justify-center rounded-2xl bg-orange-500 px-5 py-3 text-white font-semibold shadow transform transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-orange-600"
+                >View Projects</a
+              >
+              <a
+                href="#contact"
+                class="hover:bg-orange-500 hover:text-white inline-flex items-center justify-center rounded-2xl border border-stone-300 bg-white px-5 py-3 text-stone-800 font-semibold shadow transform transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+                >Contact Me</aå
+              >
+              <a
+                href="#"
+                class="inline-flex items-center justify-center rounded-2xl border border-orange-200 bg-orange-50 px-4 py-3 text-sm font-semibold text-orange-700 transform transition duration-300 hover:-translate-y-1 hover:shadow-md hover:bg-orange-100"
+                >Download CV</a
+              >
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="mx-auto max-w-sm rounded-3xl border border-orange-200 bg-white p-6 shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl"
+            >
+              <div
+                class="aspect-[4/5] overflow-hidden rounded-2xl bg-gradient-to-br from-orange-100 via-orange-50 to-white flex items-center justify-center"
+              >
+                <span
+                  class="inline-flex h-40 w-40 items-center justify-center rounded-full bg-gradient-to-tr from-orange-400 to-orange-200 shadow-inner"
+                >
+                  <span class="text-5xl font-black text-white/90">Y</span>
+                </span>
+              </div>
+              <div class="mt-5">
+                <h3 class="text-xl font-bold">Your Name</h3>
+                <p class="mt-1 text-stone-600">
+                  Front-End Developer • UI Engineer
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span
+                    class="rounded-full bg-orange-100 text-orange-800 text-xs px-3 py-1"
+                    >React</span
+                  >
+                  <span
+                    class="rounded-full bg-orange-100 text-orange-800 text-xs px-3 py-1"
+                    >TailwindCSS</span
+                  >
+                  <span
+                    class="rounded-full bg-orange-100 text-orange-800 text-xs px-3 py-1"
+                    >Next.js</span
+                  >
+                  <span
+                    class="rounded-full bg-orange-100 text-orange-800 text-xs px-3 py-1"
+                    >TypeScript</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-3 gap-10 items-start">
+          <div class="lg:col-span-1">
+            <h2 class="text-3xl font-extrabold tracking-tight text-stone-900">
+              About
+            </h2>
+            <p class="mt-2 text-stone-600">
+              A quick intro about who you are and how you work.
+            </p>
+          </div>
+          <div class="lg:col-span-2">
+            <div
+              class="rounded-3xl border border-orange-200 bg-white p-6 shadow transform transition duration-500 hover:-translate-y-2 hover:shadow-xl"
+            >
+              <p class="leading-relaxed text-stone-700">
+                I’m a developer based in
+                <span class="font-medium">Your City</span> who focuses on
+                building accessible, responsive, and beautiful web apps. I love
+                component-driven design, sensible animations, and clean code.
+              </p>
+              <ul class="mt-6 grid sm:grid-cols-2 gap-4 text-sm">
+                <li
+                  class="rounded-2xl bg-orange-50 p-4 border border-orange-100"
+                >
+                  ⚡ Fast, accessible UIs
+                </li>
+                <li
+                  class="rounded-2xl bg-orange-50 p-4 border border-orange-100"
+                >
+                  🎯 Strong on UX details
+                </li>
+                <li
+                  class="rounded-2xl bg-orange-50 p-4 border border-orange-100"
+                >
+                  🧱 Reusable components
+                </li>
+                <li
+                  class="rounded-2xl bg-orange-50 p-4 border border-orange-100"
+                >
+                  🚀 Performance-minded
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex items-end justify-between gap-4">
+          <div>
+            <h2 class="text-3xl font-extrabold tracking-tight text-stone-900">
+              Projects
+            </h2>
+            <p class="mt-2 text-stone-600">A few things I’ve built recently.</p>
+          </div>
+          <a
+            href="#"
+            class="hidden sm:inline-flex rounded-2xl border border-orange-200 bg-white px-4 py-2 text-sm font-semibold transform transition duration-300 hover:-translate-y-1 hover:bg-orange-50 hover:shadow-md"
+            >See all</a
+          >
+        </div>
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Card -->
+          <article
+            class="group rounded-3xl border border-orange-200 bg-white shadow transition-transform duration-500 hover:-translate-y-2 hover:shadow-xl"
+          >
+            <div
+              class="aspect-[16/10] rounded-t-3xl bg-gradient-to-tr from-orange-200 via-orange-100 to-white"
+            ></div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg group-hover:text-orange-600">
+                Project One
+              </h3>
+              <p class="mt-2 text-sm text-stone-600">
+                Short description of what this project does and the impact it
+                had.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                <span
+                  class="rounded-full bg-orange-50 px-2.5 py-1 border border-orange-100"
+                  >React</span
+                >
+                <span
+                  class="rounded-full bg-orange-50 px-2.5 py-1 border border-orange-100"
+                  >Tailwind</span
+                >
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="group rounded-3xl border border-orange-200 bg-white shadow transition-transform duration-500 hover:-translate-y-2 hover:shadow-xl"
+          >
+            <div
+              class="aspect-[16/10] rounded-t-3xl bg-gradient-to-tr from-orange-200 via-orange-100 to-white"
+            ></div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg group-hover:text-orange-600">
+                Project Two
+              </h3>
+              <p class="mt-2 text-sm text-stone-600">
+                Brief summary highlighting challenges solved or tech used.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="group rounded-3xl border border-orange-200 bg-white shadow transition-transform duration-500 hover:-translate-y-2 hover:shadow-xl"
+          >
+            <div
+              class="aspect-[16/10] rounded-t-3xl bg-gradient-to-tr from-orange-200 via-orange-100 to-white"
+            ></div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg group-hover:text-orange-600">
+                Project Three
+              </h3>
+              <p class="mt-2 text-sm text-stone-600">
+                What makes this project special? Add a concise value statement.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-extrabold tracking-tight text-stone-900">
+          Skills
+        </h2>
+        <p class="mt-2 text-stone-600">Technologies I use often.</p>
+        <div class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <div
+            class="rounded-3xl border border-orange-200 bg-white p-5 shadow transform transition duration-500 hover:-translate-y-2 hover:shadow-lg"
+          >
+            <h3 class="font-semibold">Frontend</h3>
+          </div>
+          <div
+            class="rounded-3xl border border-orange-200 bg-white p-5 shadow transform transition duration-500 hover:-translate-y-2 hover:shadow-lg"
+          >
+            <h3 class="font-semibold">Backend</h3>
+          </div>
+          <div
+            class="rounded-3xl border border-orange-200 bg-white p-5 shadow transform transition duration-500 hover:-translate-y-2 hover:shadow-lg"
+          >
+            <h3 class="font-semibold">Tools</h3>
+          </div>
+          <div
+            class="rounded-3xl border border-orange-200 bg-white p-5 shadow transform transition duration-500 hover:-translate-y-2 hover:shadow-lg"
+          >
+            <h3 class="font-semibold">Other</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-extrabold tracking-tight text-stone-900">
+          Experience
+        </h2>
+        <div class="mt-8 grid gap-6 lg:grid-cols-2">
+          <div
+            class="rounded-3xl border border-orange-200 bg-white p-6 shadow transform transition duration-500 hover:-translate-y-2 hover:shadow-xl"
+          >
+            <h3 class="font-semibold">Front-End Developer • Company A</h3>
+          </div>
+          <div
+            class="rounded-3xl border border-orange-200 bg-white p-6 shadow transform transition duration-500 hover:-translate-y-2 hover:shadow-xl"
+          >
+            <h3 class="font-semibold">UI Engineer • Studio B</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact" class="py-20">
+      <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <div
+          class="rounded-3xl border border-orange-200 bg-white p-8 shadow transform transition duration-500 hover:-translate-y-2 hover:shadow-xl"
+        >
+          <h2 class="text-3xl font-extrabold tracking-tight text-stone-900">
+            Let’s work together
+          </h2>
+          <p class="mt-2 text-stone-600">
+            Feel free to reach out to me through any of the platforms below:
+          </p>
+
+          <div class="mt-8 grid gap-4 sm:grid-cols-2">
+            <!-- LinkedIn -->
+            <a
+              href="https://linkedin.com/in/yourusername"
+              target="_blank"
+              class="flex items-center gap-3 rounded-2xl border border-orange-200 bg-orange-50 px-5 py-3 text-orange-800 font-semibold shadow transform transition duration-300 hover:-translate-y-1 hover:shadow-md hover:bg-orange-100"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                class="h-6 w-6"
+              >
+                <path
+                  d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761
+              2.239 5 5 5h14c2.761 0 5-2.239
+              5-5V5c0-2.761-2.239-5-5-5zM8 19H5V9h3v10zM6.5
+              7.5C5.67 7.5 5 6.83 5 6s.67-1.5
+              1.5-1.5S8 5.17 8 6s-.67 1.5-1.5
+              1.5zM20 19h-3v-5.5c0-1.379-1.121-2.5-2.5-2.5S12
+              12.121 12 13.5V19h-3V9h3v1.354C13.014 9.517
+              14.383 9 15.75 9 18.093 9 20 10.907 20
+              13.25V19z"
+                />
+              </svg>
+              LinkedIn
+            </a>
+
+            <!-- Instagram -->
+            <a
+              href="https://instagram.com/yourusername"
+              target="_blank"
+              class="flex items-center gap-3 rounded-2xl border border-orange-200 bg-orange-50 px-5 py-3 text-orange-800 font-semibold shadow transform transition duration-300 hover:-translate-y-1 hover:shadow-md hover:bg-orange-100"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                class="h-6 w-6"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012
+              4.85.07 1.366.062 2.633.35
+              3.608 1.325.975.975 1.262 2.242
+              1.324 3.608.058 1.266.07 1.646.07
+              4.85s-.012 3.584-.07 4.85c-.062
+              1.366-.35 2.633-1.324 3.608-.975.975-2.242
+              1.262-3.608 1.324-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.35-3.608-1.324-.975-.975-1.262-2.242-1.324-3.608C2.175
+              15.747 2.163 15.367 2.163
+              12s.012-3.584.07-4.85c.062-1.366.35-2.633
+              1.324-3.608C4.532 2.583 5.799 2.296 7.165
+              2.234 8.431 2.176 8.811 2.163 12
+              2.163zm0 1.687c-3.155 0-3.517.012-4.746.07-.985.046-1.52.213-1.87.36-.47.182-.805.4-1.157.752-.352.352-.57.687-.752
+              1.157-.147.35-.314.885-.36
+              1.87-.058 1.229-.07 1.591-.07
+              4.746s.012 3.517.07 4.746c.046.985.213
+              1.52.36 1.87.182.47.4.805.752
+              1.157.352.352.687.57 1.157.752.35.147.885.314
+              1.87.36 1.229.058 1.591.07
+              4.746.07s3.517-.012 4.746-.07c.985-.046
+              1.52-.213 1.87-.36.47-.182.805-.4
+              1.157-.752.352-.352.57-.687.752-1.157.147-.35.314-.885.36-1.87.058-1.229.07-1.591.07-4.746s-.012-3.517-.07-4.746c-.046-.985-.213-1.52-.36-1.87-.182-.47-.4-.805-.752-1.157-.352-.352-.687-.57-1.157-.752-.35-.147-.885-.314-1.87-.36-1.229-.058-1.591-.07-4.746-.07zm0
+              3.905a5.932 5.932 0 1 0 0 11.864 5.932 5.932
+              0 0 0 0-11.864zm0 9.778a3.846
+              3.846 0 1 1 0-7.692 3.846 3.846 0 0
+              1 0 7.692zm7.406-10.845a1.44 1.44
+              0 1 1-2.88 0 1.44 1.44 0 0
+              1 2.88 0z"
+                />
+              </svg>
+              Instagram
+            </a>
+
+            <!-- Gmail -->
+            <a
+              href="mailto:yourmail@gmail.com"
+              class="flex items-center gap-3 rounded-2xl border border-orange-200 bg-orange-50 px-5 py-3 text-orange-800 font-semibold shadow transform transition duration-300 hover:-translate-y-1 hover:shadow-md hover:bg-orange-100"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                class="h-6 w-6"
+              >
+                <path
+                  d="M12 13.065 1.5 6.75V19.5h21V6.75L12
+              13.065zm0-2.13L22.5 4.5h-21l10.5
+              6.435z"
+                />
+              </svg>
+              Gmail
+            </a>
+
+            <!-- Phone -->
+            <a
+              href="tel:+9779800000000"
+              class="flex items-center gap-3 rounded-2xl border border-orange-200 bg-orange-50 px-5 py-3 text-orange-800 font-semibold shadow transform transition duration-300 hover:-translate-y-1 hover:shadow-md hover:bg-orange-100"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                class="h-6 w-6"
+              >
+                <path
+                  d="M6.62 10.79a15.053 15.053 0 0 0
+              6.59 6.59l2.2-2.2c.27-.27.67-.36
+              1.02-.24 1.12.37 2.33.57 3.57.57.55
+              0 1 .45 1 1v3.49c0 .55-.45 1-1
+              1C10.61 21 3 13.39 3 4.5c0-.55.45-1
+              1-1H7.5c.55 0 1 .45 1 1 0 1.24.2
+              2.45.57 3.57.11.35.03.74-.25
+              1.02l-2.2 2.2z"
+                />
+              </svg>
+              +977 9800000000
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-10 border-t border-orange-100 bg-white/60">
+      <div
+        class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4"
+      >
+        <p class="text-sm text-stone-600">
+          © <span id="year"></span> Your Name. All rights reserved.
+        </p>
+
+      </div>
+    </footer>
+    <!-- Floating Back to Top Button -->
+<button
+  id="scrollTopBtn"
+  class="transform transition duration-300 hover:-translate-y-1 fixed bottom-6 right-6 z-50 hidden rounded-full bg-orange-500 p-3 text-white shadow-lg hover:bg-orange-600 hover:shadow-xl transition transform duration-300"
+  title="Back to top"
+>
+  ↑
+</button>
+
+
+    <script>
+
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+  // Show button when user scrolls down 200px
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      scrollTopBtn.classList.remove("hidden");
+    } else {
+      scrollTopBtn.classList.add("hidden");
+    }
+  });
+
+  // Scroll to top on click
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+
+
+      // year auto
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // mobile menu toggle
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
