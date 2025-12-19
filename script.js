@@ -35,14 +35,14 @@ $(document).ready(function () {
 
   // typing text animation script
   var typed = new Typed(".typing", {
-    strings: ["Dilbar", "Student"],
+    strings: ["BBM Student", "Business Analyst", "HR Executive"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
   });
 
   var typed = new Typed(".typing-2", {
-    strings: ["Student", "Dilbar"],
+    strings: ["BBM Student", "Business Analyst", "HR Executive"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
@@ -79,3 +79,5 @@ const fileChosen = document.getElementById("file-chosen");
 actualBtn.addEventListener("change", function () {
   fileChosen.textContent = this.files[0].name;
 });
+
+
